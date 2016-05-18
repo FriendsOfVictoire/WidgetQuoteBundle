@@ -1,0 +1,13 @@
+services:
+    victoire_core.widget_quote_content_resolver:
+        parent: victoire_widget.base_widget_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Quote }
+
+    victoire.widget.quote:
+        class: Victoire\Widget\QuoteBundle\Entity\WidgetQuote
+
+    victoire.widget.form.quote:
+        class: Victoire\Widget\QuoteBundle\Form\WidgetQuoteType
+        tags:
+            - { name: form.type }

@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Quote:
+            class: "Victoire\\Widget\\QuoteBundle\\Entity\\WidgetQuote"
+            name: Quote
+
+jms_translation:
+    configs:
+        victoire_quote_bundle:
+            dirs: ["@VictoireQuoteBundle"]
+            output_dir: "@VictoireQuoteBundle/Resources/translations"
