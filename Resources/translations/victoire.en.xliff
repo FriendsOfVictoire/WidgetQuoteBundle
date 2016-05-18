@@ -14,29 +14,21 @@
         <source>modal.form.widget.type.quote.label</source>
         <target state="new">Quote</target>
       </trans-unit>
-      <trans-unit id="3" resname="widget_quote.form.color.label">
-        <source>widget_quote.form.color.label</source>
-        <target state="new">color</target>
-      </trans-unit>
-      <trans-unit id="4" resname="widget_quote.form.quote.label">
+      <trans-unit id="3" resname="widget_quote.form.quote.label">
         <source>widget_quote.form.quote.label</source>
         <target state="new">quote</target>
       </trans-unit>
-      <trans-unit id="5" resname="widget_quote.form.avatar.label">
+      <trans-unit id="4" resname="widget_quote.form.avatar.label">
         <source>widget_quote.form.avatar.label</source>
         <target state="new">avatar</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget_quote.form.job.label">
+      <trans-unit id="5" resname="widget_quote.form.job.label">
         <source>widget_quote.form.job.label</source>
         <target state="new">job</target>
       </trans-unit>
-      <trans-unit id="7" resname="widget_quote.form.name.label">
+      <trans-unit id="6" resname="widget_quote.form.name.label">
         <source>widget_quote.form.name.label</source>
         <target state="new">name</target>
-      </trans-unit>
-      <trans-unit id="8" resname="widget_quote.form.company.label">
-        <source>widget_quote.form.company.label</source>
-        <target state="new">company</target>
       </trans-unit>
     </body>
   </file>

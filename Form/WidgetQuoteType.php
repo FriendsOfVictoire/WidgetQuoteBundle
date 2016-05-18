@@ -17,15 +17,6 @@ class WidgetQuoteType extends WidgetType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('color', ChoiceType::class, [
-                'label' => 'widget_quote.form.color.label',
-                'choices' => array (
-                    'widget_quote.form.quote.color.success' => 'success',
-                    'widget_quote.form.quote.color.info' => 'info',
-                    'widget_quote.form.quote.color.warning' => 'warning',
-                ),
-                'choices_as_values' => true,
-            ])
             ->add('quote', null, [
                 'label' => 'widget_quote.form.quote.label'
             ])
@@ -37,14 +28,10 @@ class WidgetQuoteType extends WidgetType
             ])
             ->add('name', null, [
                 'label' => 'widget_quote.form.name.label'
-            ])
-            ->add('companyLogo', MediaType::class, [
-                'label' => 'widget_quote.form.company.label'
             ]);
         parent::buildForm($builder, $options);
 
     }
-
 
     /**
      * {@inheritdoc}
