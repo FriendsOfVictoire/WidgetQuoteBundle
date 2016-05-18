@@ -20,7 +20,7 @@ class WidgetQuote extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="quote", type="text")
+     * @ORM\Column(name="quote", type="text", nullable=true)
      * @VIC\ReceiverProperty("textable")
      */
     protected $quote;
