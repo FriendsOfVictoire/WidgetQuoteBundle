@@ -37,7 +37,7 @@ class WidgetQuote extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="job", type="string", length=255)
+     * @ORM\Column(name="job", type="string", length=255, nullable=true)
      * @VIC\ReceiverProperty("textable")
      */
     protected $job;
@@ -45,7 +45,7 @@ class WidgetQuote extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
      * @VIC\ReceiverProperty("textable")
      */
     protected $name;
