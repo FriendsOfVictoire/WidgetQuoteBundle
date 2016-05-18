@@ -20,13 +20,6 @@ class WidgetQuote extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="color", type="string", length=255)
-     */
-    protected $color;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="quote", type="text")
      */
     protected $quote;
@@ -55,15 +48,6 @@ class WidgetQuote extends Widget
     protected $name;
 
     /**
-     * @var Media
-     *
-     * @ORM\ManyToOne(targetEntity="\Victoire\Bundle\MediaBundle\Entity\Media")
-     * @ORM\JoinColumn(name="company_logo_id", referencedColumnName="id", onDelete="CASCADE", nullable=true)
-     * @VIC\ReceiverProperty("imageable")
-     */
-    protected $companyLogo;
-
-    /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
      * //TODO Check the generated value and make it more consistent
@@ -73,29 +57,6 @@ class WidgetQuote extends Widget
     public function __toString()
     {
         return 'Quote #'.$this->id.' - '.$this->name;
-    }
-
-
-    /**
-     * Set color
-     *
-     * @param string $color
-     */
-    public function setColor($color)
-    {
-        $this->color = $color;
-
-        return $this;
-    }
-
-    /**
-     * Get color
-     *
-     * @return string
-     */
-    public function getColor()
-    {
-        return $this->color;
     }
 
     /**
@@ -185,27 +146,4 @@ class WidgetQuote extends Widget
     {
         return $this->name;
     }
-
-    /**
-     * Set companyLogo
-     *
-     * @param string $companyLogo
-     */
-    public function setCompanyLogo($companyLogo)
-    {
-        $this->companyLogo = $companyLogo;
-
-        return $this;
-    }
-
-    /**
-     * Get companyLogo
-     *
-     * @return string
-     */
-    public function getCompanyLogo()
-    {
-        return $this->companyLogo;
-    }
-
 }
