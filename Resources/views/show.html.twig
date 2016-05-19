@@ -1,15 +1,11 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-    {% include '@bricks/blockquote.html.twig' with {
-        id: widget.id,
-        cite: quote,
-        theme: color,
-        author: {
-            name: name,
-            job: job,
-            avatar: avatar is defined and avatar ? avatar.url : false,
-            company_logo: companyLogo is defined and companyLogo ? companyLogo.url : false
-        }
-    } %}
+
+    <ul>
+        <li>quote: {{ quote }}</li>
+        <li>name: {{ name }}</li>
+        <li>job: {% if job %}{{ job }}{% endif %}</li>
+        <li>avatar: {% if avatar and avatar.url is defined %}{{ avatar.url }}{% endif %}</li>
+    </ul>
 {% endblock content %}
